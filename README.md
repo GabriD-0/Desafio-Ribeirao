@@ -75,28 +75,13 @@ print(soma)  # Resultado: 77
 
 O programa descobre a lógica de várias sequências e completa o próximo elemento de cada uma.
 
-#### Código:
-```python
-seq_a = [1, 3, 5, 7]
-seq_a.append(seq_a[-1] + 2)
+# a) 1, 3, 5, 7, 9
+# b) 2, 4, 8, 16, 32, 64, 128
+# c) 0, 1, 4, 9, 16, 25, 36, 49
+# d) 4, 16, 36, 64, 64
+# e) 1, 1, 2, 3, 5, 8, 13
+# f) 2,10, 12, 16, 17, 18, 19, 20
 
-seq_b = [2, 4, 8, 16, 32, 64]
-seq_b.append(seq_b[-1] * 2)
-
-seq_c = [0, 1, 4, 9, 16, 25, 36]
-seq_c.append((len(seq_c)) ** 2)
-
-seq_d = [4, 16, 36, 64]
-seq_d.append((len(seq_d) * 2) ** 2)
-
-seq_e = [1, 1, 2, 3, 5, 8]
-seq_e.append(seq_e[-1] + seq_e[-2])
-
-seq_f = [2, 10, 12, 16, 17, 18, 19]
-seq_f.append(seq_f[-1] + 1)
-
-print(seq_a, seq_b, seq_c, seq_d, seq_e, seq_f)
-```
 
 ---
 
@@ -105,12 +90,8 @@ print(seq_a, seq_b, seq_c, seq_d, seq_e, seq_f)
 O objetivo é identificar qual interruptor controla qual lâmpada, usando apenas duas idas até a sala onde estão as lâmpadas.
 
 #### Solução:
-- Ligue um dos interruptores e espere por alguns minutos.
-- Desligue o primeiro interruptor e ligue o segundo.
-- Vá para a sala das lâmpadas.
-  - A lâmpada acesa será controlada pelo segundo interruptor (o que está ligado no momento).
-  - Toque nas lâmpadas apagadas:
-    - A lâmpada quente será controlada pelo primeiro interruptor (que foi ligado por alguns minutos antes de ser desligado).
-    - A lâmpada fria será controlada pelo terceiro interruptor (que nunca foi ligado).
+# Eu acenderia um dos interruptores e esperaria por alguns minutos e desligaria ele e ligaria o próximo interruptor e sairia da sala dos interruptores e 
+# iria pra sala onde tivesse as lâmpadas. A luz acesa, significa que o segundo interruptor esta ligado. 
+# Ja na lampadas apagadas iria tocar nelas para ver qual estava quente, sendo assim identificando o primeiro interruptor.
 
 Com essa lógica, é possível identificar qual interruptor controla cada lâmpada usando apenas duas idas à sala das lâmpadas.
